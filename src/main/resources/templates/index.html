@@ -1,33 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
+    <script type="text/javascript" th:src="@{/js/functions.js}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<!--
-<div>
-    <h1>Opret User</h1>
-    <form class="forms" action="#" th:action="@{/createUser}" th:object="${createUser}"
-          method="post">
-        <table>
-            <tr>
-                <td><label for="name">User Name:</label></td>
-                <td><input type="text" th:field="*{userName}" name="name" id="name"/></td>
-            </tr>
-        </table>
-    </form>
-    <button  type="submit" value="Opret">Opret</button>
-</div>
--->
-<div>
-
-        <tr th:each="user : ${user}">
-            <td th:text="${user.getUserName}"></td>
-        </tr>
-
-</div>
+<a href="/"><h2>Add User</h2></a>
+<form>
+    <input type="text" id="username" value="Anna">
+    <input type="submit" value="Search">
+</form>
+<script type="text/javascript">
+    checkjQuery();
+</script>
 
 </body>
 </html>

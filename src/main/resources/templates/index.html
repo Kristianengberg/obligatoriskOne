@@ -8,12 +8,17 @@
 </head>
 
 <a href="/"><h2>Add User</h2></a>
-<form>
-    <input type="text" id="username" value="Anna">
-    <input type="submit" value="Search">
+<form id="addform">
+    <input type="text" id="username" value="">
+    <input type="submit" value="Opret">
 </form>
+
+<div id="status">
+
+</div>
 <script type="text/javascript">
     checkjQuery();
+    preventAddForm($("#addform")); // find form via jQuery og kald på metoden
 </script>
 
 </body>

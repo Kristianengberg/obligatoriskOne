@@ -1,15 +1,11 @@
-package model;
+package com.example.demo;
 
-public class Users {
+public class User {
 
     private String userName;
 
-    public Users(){
+    public User(){
 
-    }
-
-    public Users(String userName){
-        this.userName = userName;
     }
 
     public String getUserName() {
